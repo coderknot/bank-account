@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.1.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Bank Account</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Bank Account</h1>
+
+    <div class="row">
+      <div class="col-md-6">
+        <form id="registration-form">
+          <div class="form-group">
+            <div class="form-group">
+              <label for="customer-name">Name</label>
+              <input id="customer-name" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label for="initial-deposit">Initial Deposit</label>
+              <input id="initial-deposit" class="form-control" type="text">
+            </div>
+          </div>
+          <button type="submit" class="btn">Register Account</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <form id="transaction-form">
+          <div class="form-group">
+            <div class="form-group">
+              <label for="deposit">Deposit Amount</label>
+              <input id="deposit" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label for="withdraw">Withdraw Amount</label>
+              <input id="withdraw" class="form-control" type="text">
+            </div>
+          </div>
+          <span class="btn btn-primary" id="transaction-btn">Complete Transaction</span>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Current Balance</h2>
+        <p><span id="current-balance"></span></p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
